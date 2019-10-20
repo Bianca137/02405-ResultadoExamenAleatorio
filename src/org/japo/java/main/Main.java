@@ -15,15 +15,31 @@
  */
 package org.japo.java.main;
 
+import java.util.Locale;
+import java.util.Scanner;
+import java.util.Random;
+
 /**
  *
  * @author Bianca Antonela Glavan - biancaantonela.glavan.alum@iescamp.es
  */
 public class Main {
+
+    public static final Scanner SCN
+            = new Scanner(System.in, "Windows-1252")
+                    .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
+
+    public static final Random RND = new Random();
+
     public static void main(String[] args) {
-        
-    
-        
+
+        // int balance = RND.nextInt();
+        boolean valor;
+
+        valor = RND.nextBoolean();
+
+        System.out.printf("Aptitud satisfactoria....: %b%n", valor);
+
     }
-    
+
 }
